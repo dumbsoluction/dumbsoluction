@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DumbSolution - Home</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border: 2px solid #0f0;
+            box-shadow: 0 0 10px #0f0;
+        }
+        h1 {
+            text-transform: uppercase;
+            text-shadow: 0 0 5px #0f0;
+        }
+        .hidden-link {
+            display: block;
+            margin-top: 20px;
+            color: #0f0;
+            text-decoration: none;
+        }
+        .hidden-link:hover {
+            text-shadow: 0 0 5px #fff;
+        }
+        .search-box {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            background-color: #111;
+            border: 1px solid #0f0;
+            color: #0f0;
+            padding: 5px;
+            font-family: "Courier New", monospace;
+        }
+        button {
+            background-color: #0f0;
+            color: #000;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    </style>
+    <script>
+        function search() {
+            let input = document.getElementById("search").value.toLowerCase();
+            let containers = document.querySelectorAll(".container");
+            let found = false;
+            
+            containers.forEach(container => {
+                if (container.classList.contains(input) || container.innerText.toLowerCase().includes(input)) {
+                    container.style.display = "block";
+                    found = true;
+                } else {
+                    container.style.display = "none";
+                }
+            });
+            
+            if (!found) {
+                alert("Nenhum resultado encontrado.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Atividades Disponíveis:</h1>
+    <div class="search-box">
+        <input type="text" id="search" placeholder="Pesquisar por matéria, série ou página">
+        <button onclick="search()">Pesquisar</button>
+    </div>
+    
+    <div class="container teste 20ano pagina999">
+        <h2>Teste</h2>
+        <h3>
+            -1-<p>Resposta Qualquer Que Salva O Homem e A Molher que come de Garfo e De Colher.</p>
+        </h3>
+        <h3>
+            -2-<p>Resposta Qualquer Que Salva O Homem e A Molher que come de Garfo e De Colher.</p>
+        </h3>
+    </div>
+    
+    <div class="container teste 20ano pagina999">
+        <h2>Teste</h2>
+        <h3>
+            -1-<p>Outra resposta relevante.</p>
+        </h3>
+        <h3>
+            -2-<p>Mais uma resposta qualquer.</p>
+        </h3>
+    </div>
+    <footer class="container">
+        Pra Ser Um Postador De Respostas Preencha
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSehHOaRC1AFm3m0xrhCeqoyV5Y4BetwRLzBypwqIUW1Dc_-SQ/viewform?usp=header">Aqui!</a>
+        Discord: <a href="https://discord.gg/drsbS2r6qY">Aqui</a>
+        <p>
+            <a href="https://pt.wikipedia.org/wiki/Especial:Aleat%C3%B3ria" style="color: red;">⚠Saída de emergência⚠</a>
+        </p>
+    </footer>
+</body>
+</html>
+
+<!--
+   ________
+ /          \
+|  X     X  | Made By B4BY
+\    /\    /
+ |   |  | |
+ |__|__|__| -->
