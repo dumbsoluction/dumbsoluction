@@ -4,77 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DumbSolution - Home</title>
-    <style>
-        body {
-            background-color: #000;
-            color: #0f0;
-            font-family: "Courier New", monospace;
-            text-align: center;
-            padding: 50px;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 20px;
-            border: 2px solid #0f0;
-            box-shadow: 0 0 10px #0f0;
-        }
-        h1 {
-            text-transform: uppercase;
-            text-shadow: 0 0 5px #0f0;
-        }
-        .hidden-link {
-            display: block;
-            margin-top: 20px;
-            color: #0f0;
-            text-decoration: none;
-        }
-        .hidden-link:hover {
-            text-shadow: 0 0 5px #fff;
-        }
-        .search-box {
-            margin-bottom: 20px;
-        }
-        input[type="text"] {
-            background-color: #111;
-            border: 1px solid #0f0;
-            color: #0f0;
-            padding: 5px;
-            font-family: "Courier New", monospace;
-        }
-        button {
-            background-color: #0f0;
-            color: #000;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #fff;
-            color: #000;
-        }
-    </style>
-    <script>
-        function search() {
-            let input = document.getElementById("search").value.toLowerCase();
-            let containers = document.querySelectorAll(".container");
-            let found = false;
-            
-            containers.forEach(container => {
-                if (container.classList.contains(input) || container.innerText.toLowerCase().includes(input)) {
-                    container.style.display = "block";
-                    found = true;
-                } else {
-                    container.style.display = "none";
-                }
-            });
-            
-            if (!found) {
-                alert("Nenhum resultado encontrado.");
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <h1>Atividades Disponíveis:</h1>
@@ -83,29 +14,40 @@
         <button onclick="search()">Pesquisar</button>
     </div>
     
-    <div class="container teste 20ano pagina999">
+    <div class="container teste 20ano pagina999"><!--container(obrigatório) matéria(sem assento) série pagina(opcional)-->
         <h2>Teste</h2>
         <h3>
-            -1-<p>Resposta Qualquer Que Salva O Homem e A Molher que come de Garfo e De Colher.</p>
+            -1-<p>Resposta Qualquer Que Salva O Homem e A Mulher que come de Garfo e De Colher.</p>
         </h3>
         <h3>
-            -2-<p>Resposta Qualquer Que Salva O Homem e A Molher que come de Garfo e De Colher.</p>
+            -2-<p>Resposta Qualquer Que Salva O Homem e A Mulher que come de Garfo e De Colher.</p>
         </h3>
     </div>
     
-    <div class="container teste 20ano pagina999">
-        <h2>Teste</h2>
+    <div class="container matematica 8ano pagina74"><!--Enviado dia 25/02/2025-->
+        <h2>8ano Matemática PÁG:74</h2>
         <h3>
-            -1-<p>Outra resposta relevante.</p>
+            <p>-1-   A:32 | B:778 | C:1 | D:3</p>
         </h3>
+        <p>-----------------------------------------------</p>
         <h3>
-            -2-<p>Mais uma resposta qualquer.</p>
+            <p>-2- A:26 ; 0.529 ; 10.9 | B:1.258 ; 2.546 ; 0.58 ; 32.74</p>
+        </h3>
+        <p>-----------------------------------------------</p>
+        <h3>
+            <p>-3- A:1/9 | B:1/90 | C:1/900 | </p> 
+            <p>Resposta Por Escrito:Podemos Concluir </p>
+            <p>Através dos resultados das questões anteriores </p>
+            <p>Que a quantidade Números após a vírgula </p>
+            <p>Em uma Dizima Composta Influencia Em Sua Geratriz.</p>
         </h3>
     </div>
     <footer class="container">
-        Pra Ser Um Postador De Respostas Preencha
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSehHOaRC1AFm3m0xrhCeqoyV5Y4BetwRLzBypwqIUW1Dc_-SQ/viewform?usp=header">Aqui!</a>
-        Discord: <a href="https://discord.gg/drsbS2r6qY">Aqui</a>
+        Versão Beta 1.2.0
+        <p>Pra Ser Um Postador De Respostas Preencha
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSehHOaRC1AFm3m0xrhCeqoyV5Y4BetwRLzBypwqIUW1Dc_-SQ/viewform?usp=header">Aqui!</a>
+        </p>
+        Discord: <a href="https://discord.gg/drsbS2r6qY">Aqui!</a>
         <p>
             <a href="https://pt.wikipedia.org/wiki/Especial:Aleat%C3%B3ria" style="color: red;">⚠Saída de emergência⚠</a>
         </p>
@@ -116,7 +58,7 @@
 <!--
    ________
  /          \
-|  X     X  | Made By B4BY
+|  X     X  | Made By B4BY 💀
 \    /\    /
  |   |  | |
  |__|__|__| -->
